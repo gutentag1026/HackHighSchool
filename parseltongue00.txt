@@ -1,0 +1,17 @@
+go to slack marvin
+!brew
+Copy and paste the following to install brew. More information about brew here https://brew.sh/
+```mkdir $HOME/.brew && curl -fsSL https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/.brew
+mkdir -p /tmp/.$(whoami)-brew-locks
+mkdir -p $HOME/.brew/var/homebrew
+ln -s /tmp/.$(whoami)-brew-locks $HOME/.brew/var/homebrew/locks
+export PATH="$HOME/.brew/bin:$PATH"
+brew update && brew upgrade```
+Afterwards make sure you add the following lines to your `.zshrc`
+```mkdir -p /tmp/.$(whoami)-brew-locks
+export PATH="$HOME/.brew/bin:$PATH"```
+
+to install sl: brew intall sl
+to install ag: brew intall ag 
+
+https://www.mankier.com/1/ag
