@@ -1,0 +1,37 @@
+pwd: "Present Working Directory" For all the "Where am I?" moments. When you first
+open a terminal, you start in your Home directory, which is labelled with your
+username.
+$ pwd
+cd: aka "Change Directory". "cd .." means go back a directory. "cd" by itself means go
+back to Home directory. Below we are moving into a directory called Desktop.
+$ cd Desktop/
+mkdir: Short for "Make Directory". Creates a new empty directory.
+$ mkdir ex00
+ls or ls -a: "list", list all the folders and files inside the current directory you are in.
+$ ls
+touch: create files (files will usually end with the language you are using for example
+ruby is 42.rb, python is 42.py, text files are 42.txt)
+$ cd ex00
+$ touch 42.txt
+vim: to use an in terminal text editor to edit your files. Once inside vim, press "i" to
+edit and press ":wq" to save and exit the file. Try writing "Hello World" on the top
+and then exiting.
+$ vim 42.txt
+cat: to preview the contents of the file in Terminal. It should show "Hello World".
+$ cat 42.txt
+10
+Parseltongue Piscine - Day00 Learn to 42
+cp: "copy", copies files or directories. Here, we copy the file 42.txt and place it in the
+HackHighSchool/ directory. Don’t forget to make the HackHighSchool directory
+first.
+$ cp 42.txt HackHighSchool/
+mv: "move", move a file into a directory, use mv with the source file as the first argument
+and the destination directory as the second argument. Here we move 42.txt into
+HackHighSchool/
+$ mv 42.txt HackHighSchool/
+rm or rm -rf: "rm" to delete files and "rm -rf" to delete directories.
+$ rm -rf HackHighSchool
+ascii banner: create an ascii art banner on your terminal
+$ banner -w 35 COOL
+say: Make your mac say whatever you want it to say.
+$ say "HackHighSchool is super fun"
